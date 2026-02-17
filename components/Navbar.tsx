@@ -2,13 +2,14 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ShoppingCart } from "lucide-react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 px-4 flex items-center justify-between bg-black/70 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 px-4 flex items-center justify-between bg-black/70 backdrop-blur-md">
 
       {/* LOGO */}
       <div className="flex items-center gap-4">
@@ -66,12 +67,12 @@ export default function Navbar() {
       {/* LOG IN + CARRITO DESKTOP */}
       <div className="hidden md:flex items-center gap-4">
 
-        <a
-          href="#"
+        <Link
+          href="/login"
           className="px-6 py-2 rounded-lg border border-white/40 text-white hover:bg-white/10 backdrop-blur-sm transition"
         >
           Log In
-        </a>
+        </Link>
 
         <button
           className="relative p-3 rounded-lg border border-white/40 hover:bg-white/10 backdrop-blur-sm transition"
@@ -102,10 +103,10 @@ export default function Navbar() {
           </ul>
         </details>
 
-        <a
+        <Link
           className="px-6 py-2 rounded-lg border border-white/40 hover:bg-white/10 backdrop-blur-sm transition"
-          href="#"
-        >Log In</a>
+          href="/login"
+        >Log In</Link>
 
         <button
           className="p-3 rounded-lg border border-white/40 hover:bg-white/10 backdrop-blur-sm transition flex items-center w-fit"

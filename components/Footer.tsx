@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import { FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -11,28 +11,49 @@ export default function Footer() {
         <div>
           <h3 className="text-2xl font-bold mb-3">Saturno Studio</h3>
           <p className="text-sm text-gray-400 leading-relaxed">
-            Somos una boutique creativa especializada en diseño web y experiencias visuales inspiradas en el cosmos. 
-            Creamos productos con atención al detalle y enfoque en usabilidad.
+            Somos una empresa dedicada al estampado DTF, enfocada en ofrecer playeras de alta calidad con diseños únicos y duraderos.
           </p>
 
           <div className="mt-6 flex items-center gap-3">
-            {/* Social icons - coloca los SVG/PNG en /public/icons/ */}
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <Image src="/icons/twitter.svg" alt="Twitter" width={28} height={28} />
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              className="transition-colors hover:text-white"
+            >
+              <FaTwitter size={28} />
             </a>
 
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <Image src="/icons/instagram.svg" alt="Instagram" width={28} height={28} />
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="transition-colors hover:text-white"
+            >
+              <FaInstagram size={28} />
             </a>
 
-            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <Image src="/icons/facebook.svg" alt="Facebook" width={28} height={28} />
+            <a
+              href="https://facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="transition-colors hover:text-white"
+            >
+              <FaFacebookF size={28} />
             </a>
 
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <Image src="/icons/linkedin.svg" alt="LinkedIn" width={28} height={28} />
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="transition-colors hover:text-white"
+            >
+              <FaLinkedinIn size={28} />
             </a>
-
           </div>
         </div>
 
@@ -42,15 +63,17 @@ export default function Footer() {
           <ul className="text-sm text-gray-300 space-y-2">
             <li>
               <span className="block text-gray-400">Email</span>
-              <a href="mailto:contacto@saturno.studio" className="break-all">contacto@saturno.studio</a>
+              <a href="mailto:contacto@saturno.studio" className="break-all">
+                luis_bull@outlook.com
+              </a>
             </li>
             <li>
               <span className="block text-gray-400">Teléfono</span>
-              <a href="tel:+5215512345678">+52 1 55 1234 5678</a>
+              <a href="tel:+5215512345678">+5550601828</a>
             </li>
             <li>
               <span className="block text-gray-400">Dirección</span>
-              <span>Agropecuaria 123, Iztacalco, CDMX</span>
+              <span>Ecatepec de Morelos, Mexico</span>
             </li>
           </ul>
 
@@ -64,7 +87,7 @@ export default function Footer() {
         <div>
           <h4 className="text-xl font-semibold mb-3">Sobre la empresa</h4>
           <p className="text-sm text-gray-400 mb-4">
-            Saturno Studio nace de la pasión por el diseño espacial y la tecnología. Ofrecemos desarrollo web, branding y animaciones 3D.
+            Saturno Studio nace de la idea de crear playeras únicas con diseños originales e innovadores, inspirados en la creatividad y la originalidad. Nuestro objetivo es ofrecer prendas de alta calidad mediante estampado DTF, cuidando cada detalle del proceso para garantizar acabados duraderos, colores vibrantes y diseños que no encontrarás en ningún otro lugar.
           </p>
 
           <nav className="flex flex-col gap-2 text-sm">
@@ -83,7 +106,9 @@ export default function Footer() {
                 placeholder="Tu mejor correo"
                 className="w-full px-3 py-2 rounded-md bg-white/5 placeholder:text-gray-400 text-sm focus:outline-none"
               />
-              <button className="px-4 py-2 rounded-md bg-white text-black text-sm font-medium">Suscribir</button>
+              <button className="px-4 py-2 rounded-md bg-white text-black text-sm font-medium">
+                Suscribir
+              </button>
             </div>
           </div>
         </div>

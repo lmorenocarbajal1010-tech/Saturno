@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Remove default browser margin so the background covers the full viewport */
+html, body, #__next {
+  height: 100%;
+  margin: 0;
+}
